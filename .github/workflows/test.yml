@@ -12,9 +12,9 @@ on:
 jobs:
   lint:
     name: Lint
-    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@dad9814cc9c69d48020962b0e2aaa89e4b48f796
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@6495ac6b96f806e689d068ea293b2e820dd14104
     with:
-      build: false
-      test: false
       os: '["ubuntu-latest"]'
       node-versions: "[18]"
+      pnpm-commands: '["lint"]'
+      job-title: Lint
