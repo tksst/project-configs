@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/tksst/typescript-starter-configs/compare/v2.0.0...v2.1.0) (2023-01-15)
+
+
+### Features
+
+* enable GitHub Actions Reporter ([ba588f9](https://github.com/tksst/typescript-starter-configs/commit/ba588f9a4fdb7afcafbafba07e28c2e409d0efca))
+
 # [2.0.0](https://github.com/tksst/typescript-starter-configs/compare/v1.0.0...v2.0.0) (2022-12-15)
 
 
