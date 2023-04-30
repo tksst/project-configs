@@ -6,13 +6,13 @@ on:
   pull_request:
   push:
     branches-ignore:
-      - master
+      - main
       - alpha
 
 jobs:
   lint:
     name: Lint
-    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@6495ac6b96f806e689d068ea293b2e820dd14104
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@4519d724fd3e9b0295f9407d5b48f019d1d43033
     with:
       os: '["ubuntu-latest"]'
       node-versions: "[18]"
