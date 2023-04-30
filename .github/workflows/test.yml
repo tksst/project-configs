@@ -6,7 +6,7 @@ on:
   pull_request:
   push:
     branches-ignore:
-      - master
+      - main
       - alpha
 
 jobs:
