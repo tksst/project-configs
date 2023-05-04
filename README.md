@@ -4,3 +4,4 @@ This package provides following:
 - a config for [tsup](https://tsup.egoist.dev/)
 - a config for TypeScript (`tsconfig.json`)
 - a script that remove directories recursively
+- a config for [changesets](https://github.com/changesets/changesets) commit message
