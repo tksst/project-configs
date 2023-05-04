@@ -1,5 +1,11 @@
 # @tksst/typescript-starter-configs
 
+## 3.1.0
+
+### Minor Changes
+
+-   25f4212: export a changesets commit message config
+
 ## 3.0.0
 
 ### Major Changes
