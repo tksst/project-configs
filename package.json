@@ -1,11 +1,11 @@
 {
-  "name": "@tksst/typescript-starter-configs",
+  "name": "@tksst/project-configs",
   "version": "3.1.0",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/tksst/typescript-starter-configs",
-  "repository": "github:tksst/typescript-starter-configs",
+  "homepage": "https://github.com/tksst/project-configs",
+  "repository": "github:tksst/project-configs",
   "license": "Apache-2.0",
   "author": {
     "name": "Takashi Sato",
