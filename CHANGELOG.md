@@ -1,4 +1,4 @@
-# @tksst/typescript-starter-configs
+# @tksst/project-configs
 
 ## 4.0.0
 
