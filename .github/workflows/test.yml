@@ -11,7 +11,7 @@ on:
 jobs:
   lint:
     name: Lint
-    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@dd41bcef2675d1198511e6ab772eb8d07a0ccd57
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@6527d452c88ace5c40d6c21e28b4fb7745e10501
     with:
       os: '["ubuntu-latest"]'
       node-versions: "[18]"
