@@ -17,13 +17,13 @@ jobs:
 
     steps:
       - name: set up the project
-        uses: tksst/github-actions-workflows/actions/setup-pnpm-project@118c76c1845aa9c8974dd0664742f4c46ed25304
+        uses: tksst/github-actions-workflows/actions/setup-pnpm-project@6da3b9300d3cc7d7cfb1108c7f5b3783b2a18826
         with:
           node-version: 18
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@f13b1baaa620fde937751f5d2c3572b9da32af23 # v1.4.5
+        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9 # v1.4.7
         with:
           publish: pnpm exec changeset publish
         env:
