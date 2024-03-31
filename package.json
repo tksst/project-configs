@@ -23,12 +23,20 @@
   },
   "scripts": {
     "fix": "pnpm lint --write",
-    "lint": "prettier --cache -l ."
+    "lint": "prettier --cache -l .",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.1",
     "@tksst/prettier-config": "1.1.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
     "prettier": "3.2.5"
   },
-  "packageManager": "pnpm@8.15.5"
+  "packageManager": "pnpm@8.15.5",
+  "lint-staged": {
+    "*": [
+      "prettier --cache --check"
+    ]
+  }
 }
