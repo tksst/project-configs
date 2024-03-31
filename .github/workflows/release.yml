@@ -1,25 +1,46 @@
-name: Test and Release
+name: Lint and Release
 on:
   push:
     branches:
       - main
 
 jobs:
-  test:
+  lint:
     uses: ./.github/workflows/test.yml
-  release:
-    needs: test
     permissions:
+      actions: write
+      contents: read
+
+  release:
+    needs: lint
+
+    permissions:
+      # Uncommment the following line if you enable a package provenance
+      # id-token: write
       # create a PR
       contents: write
       pull-requests: write
-    runs-on: ubuntu-latest
+
+    runs-on: ubuntu-22.04
 
     steps:
-      - name: set up the project
-        uses: tksst/github-actions-workflows/actions/setup-pnpm-project@118c76c1845aa9c8974dd0664742f4c46ed25304
+      - name: Checkout the source
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          node-version: 18
+          show-progress: false
+          submodules: recursive
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version: 20.12.0
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
