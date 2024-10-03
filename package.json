@@ -27,10 +27,10 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.7",
+    "@changesets/cli": "2.27.9",
     "@tksst/prettier-config": "1.1.0",
-    "husky": "9.1.1",
-    "lint-staged": "15.2.7",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
     "prettier": "3.3.3"
   },
   "packageManager": "pnpm@9.5.0",
